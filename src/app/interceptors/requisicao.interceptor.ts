@@ -16,17 +16,17 @@ export class RequisicaoInterceptor implements HttpInterceptor {
   constructor(private spinnerService: SpinnerService) {}
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    this.spinnerService.showSpinner();
+    this.spinnerService.mostrarSpinner();
 
     return next.handle(request).pipe(
       map((event: HttpEvent<any>) => {
         if (event instanceof HttpResponse) {
-          this.spinnerService.hideSpinner();      
+          this.spinnerService.ocultarSpinner();      
         }
         return event;
       }),
       catchError((error: any, caught: Observable<any>) => {
-        this.spinnerService.hideSpinner();      
+        this.spinnerService.ocultarSpinner();      
         alert(error.message);
         return error;
       })

@@ -11,7 +11,6 @@ import { WheaterAPIService } from 'src/app/services/wheater-api/wheater-api.serv
 export class CidadeComponent {
   private callbackSucesso!: () => void;
   private cidade: any;
-  showSpinner = false;
   @Input() nome: string|undefined;
   @Input() temperaturaAtual: string|undefined;
   @Input() tempoAtual: string|undefined;

@@ -12,11 +12,10 @@ export class AppComponent {
   title = 'termocity';
   
   constructor(private spinnerService: SpinnerService){
-    this.spinnerService.spinner$.subscribe((data: boolean) => {
+    this.spinnerService.spinner$.subscribe((exibir: boolean) => {
       setTimeout(() => {
-        this.mostrarSpinner = data ? data : false;
+        this.mostrarSpinner = exibir;
       });
-      console.log(this.mostrarSpinner);
     });
   }
 }

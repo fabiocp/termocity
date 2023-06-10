@@ -12,11 +12,11 @@ export class SpinnerService {
     this.spinner$ = new Subject<any>();
   }
 
-  showSpinner() {
+  mostrarSpinner() {
     this.spinner$.next(true);
   }
 
-  hideSpinner() {
+  ocultarSpinner() {
     this.spinner$.next(false);
   }
 }

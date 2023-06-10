@@ -19,7 +19,7 @@ export class TelaPrincipalComponent {
     {id: "chapeco", descricao:"Chapecó-SC"},
     {id: "london", descricao:"Londres - Inglaterra"},
     {id: "paris", descricao:"Paris - França"},
-    {id: "berlin", descricao:"Berlin - Alemanha"}
+    {id: "berlin", descricao:"Berlim - Alemanha"}
   ];
 
   cidadeSelecionada: any;
