@@ -1,0 +1,11 @@
+<div class="cidade-area">
+    <div class="cidade-dados">
+        <h1>{{nome}}</h1>
+        <p>Temperatura atual: <b>{{temperaturaAtual}}°</b> ({{tempoAtual}})</p>
+        <div class="div-previsoes">
+            <p *ngFor="let previsao of previsoes">
+                Previsão tempo para {{previsao.dia}}: <b>{{previsao.temperatura}}°</b> ({{previsao.tempo}})
+            </p>
+        </div>
+    </div>
+</div>
