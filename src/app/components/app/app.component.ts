@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { SpinnerService } from './services/spinner/spinner.service';
+import { SpinnerService } from '../../services/spinner/spinner.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { SpinnerService } from './services/spinner/spinner.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @Input() mostrarSpinner: boolean = false;
+  mostrarSpinner: boolean = false;
   title = 'termocity';
   
   constructor(private spinnerService: SpinnerService){

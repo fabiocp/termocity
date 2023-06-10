@@ -7,7 +7,7 @@
         <span class="navbar-brand">TermoCity</span>
     </div>
     <ul class="nav navbar-nav">
-        <li *ngFor="let cidade of lstCidades">
+        <li [ngClass]="{'nav-item': true, 'active': cidadeSelecionada && cidadeSelecionada.id == cidade.id}" *ngFor="let cidade of lstCidades">
             <a href="#" (click)="onClickCidade(cidade)">{{cidade.descricao}}</a>
         </li>
     </ul>

@@ -4,13 +4,13 @@ import { CidadeComponent } from '../cidade/cidade.component';
 import { SpinnerComponent } from '../spinner/spinner.component';
 
 @Component({
-  selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.css']
+  selector: 'app-tela-principal',
+  templateUrl: './tela-principal.component.html',
+  styleUrls: ['./tela-principal.component.css']
 })
 
 
-export class LayoutComponent {
+export class TelaPrincipalComponent {
   
   @ViewChild("container", { read: ViewContainerRef }) container: ViewContainerRef|undefined;
   @Input() carregou: boolean = false;
@@ -22,9 +22,12 @@ export class LayoutComponent {
     {id: "berlin", descricao:"Berlin - Alemanha"}
   ];
 
+  cidadeSelecionada: any;
+
   constructor(private resolver: ComponentFactoryResolver){}
 
    onClickCidade(cidade: any){
+    this.cidadeSelecionada = cidade;
     this.carregou = false;
 
     setTimeout(() => {
