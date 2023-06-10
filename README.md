@@ -2,10 +2,10 @@
 
 Termocity é uma aplicação Web que permite consultar a temperatura atual e a previsão do tempo de diversas cidades. Até o momento, as cidades disponíveis são:
 
-Chapecó - SC (Brasil)
-Londres (Inglaterra)
-Paris (França)
-Berlim (Alemanha)
+- Chapecó - SC (Brasil)
+- Londres (Inglaterra)
+- Paris (França)
+- Berlim (Alemanha)
 
 
 # Descrição do projeto:
